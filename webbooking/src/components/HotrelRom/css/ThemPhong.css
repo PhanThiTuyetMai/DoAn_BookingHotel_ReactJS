@@ -1,0 +1,48 @@
+.checkbox-input {
+    display: none; /* Ẩn checkbox gốc */
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff; /* Đường viền màu xanh */
+    border-radius: 4px; /* Bo góc */
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+    background-color: #007bff; /* Màu nền khi chọn */
+}
+
+.checkbox-custom:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* Màu của dấu tích */
+    display: none;
+}
+
+.checkbox-input:checked + .checkbox-custom:after {
+    display: block; /* Hiển thị dấu tích khi chọn */
+}
+
+.img-preview {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-thumbnail {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+.btn {
+    margin-top: 1rem;
+}

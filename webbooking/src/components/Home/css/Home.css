@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* AppBar Styles */
+.appBar {
+    background-color: #1976d2; /* Blue color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appBar .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appBar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.appBar .menuButton {
+    color: white;
+}
+
+.appBar .buttonGroup {
+    display: flex;
+    align-items: center;
+}
+
+.appBar .buttonGroup .button {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Drawer Styles */
+.drawer {
+    width: 250px;
+}
+
+.drawer .menuList {
+    padding: 0;
+}
+
+.drawer .menuList .listItem {
+    border-bottom: 1px solid #ddd;
+}
+
+.drawer .menuList .listItemText {
+    font-size: 1rem;
+}
+
+/* Menu Styles */
+.menu {
+    min-width: 200px;
+}
+
+.menu .menuItem {
+    font-size: 1rem;
+}
+
+
+.slider-container8 {
+    position: relative; /* Đặt vị trí tương đối cho chứa hình ảnh và nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slider-container8 img {
+    width: 100%; /* Kích thước tự động điều chỉnh theo chiều rộng */
+    height: 400px; /* Chiều cao cố định */
+    object-fit: cover; /* Cắt hình ảnh để giữ tỷ lệ */
+    border-radius: 8px; /* Bo góc nếu muốn */
+}
+
+.slider-button8 {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    background-color: rgba(0, 123, 255, 0.5); /* Nền mờ */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Bo góc thành hình tròn */
+    width: 40px; /* Đường kính nút */
+    height: 40px; /* Đường kính nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+}
+
+.slider-button8.left {
+    left: 10px; /* Đặt cách lề trái */
+    top: 50%; /* Đặt vào giữa chiều dọc */
+    transform: translateY(-50%); /* Giúp căn giữa */
+}
+
+.slider-button8.right {
+    right: 10px; /* Đặt cách lề phải */
+    top: 50%; /* Đặt vào giữa chiều dọc */
+    transform: translateY(-50%); /* Giúp căn giữa */
+}

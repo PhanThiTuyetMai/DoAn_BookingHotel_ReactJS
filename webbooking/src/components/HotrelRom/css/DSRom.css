@@ -1,0 +1,211 @@
+.container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-container {
+    margin-bottom: 20px;
+}
+
+.info-container {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.map {
+    height: 100%; /* Hoặc chiều cao mà bạn muốn */
+    width: 100%; /* Hoặc chiều rộng mà bạn muốn */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff4d4d;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 80%;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+.hotel-description {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.hotel-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.hotel-paragraph {
+    margin-bottom: 15px;
+}
+
+.hotel-strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image {
+    opacity: 0; /* Bắt đầu với opacity = 0 */
+}
+
+.slider-image.active {
+    opacity: 1; /* Khi hình ảnh hiện tại, đổi thành opacity = 1 */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 3;
+    color: #007bff;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.service-column {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.services-title {
+    font-weight: bold;
+    color: red;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.service-list {
+    margin-top: 10px;
+}
+
+.service-item {
+    margin: 5px 0;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.action-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.image-container-room {
+    position: relative;
+    height: 300px; /* Đặt chiều cao cố định */
+    overflow: hidden;
+    flex-shrink: 0; /* Ngăn không cho hình ảnh co lại */
+    width: 30%; /* Chiều rộng hình ảnh */
+}
+
+.main-image-room, .slider-image-room {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image-room {
+    opacity: 0; /* Bắt đầu với opacity = 0 */
+}
+
+.slider-image-room.active {
+    opacity: 1; /* Khi hình ảnh hiện tại, đổi thành opacity = 1 */
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0; /* Tạo khoảng cách trên và dưới */
+}
+
+.price-info p {
+    margin: 0; /* Xóa khoảng cách mặc định của thẻ p */
+}

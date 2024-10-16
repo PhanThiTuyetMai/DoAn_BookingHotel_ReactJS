@@ -1,0 +1,20 @@
+.container1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;     /* Căn giữa theo chiều ngang */
+    height: 100vh;           /* Chiều cao của container bằng với chiều cao của viewport */
+    /* background: linear-gradient(to right, #fbc2eb, #a6c0fe); Gradient background */
+    background: 'blue'
+  }
+  
+.card {
+    margin-top: auto;        /* Đẩy card xuống dưới cùng */
+    margin-bottom: auto;     /* Đẩy card lên trên nếu có thêm nội dung phía dưới */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+  

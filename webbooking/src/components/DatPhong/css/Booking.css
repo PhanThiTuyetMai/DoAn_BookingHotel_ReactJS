@@ -1,0 +1,100 @@
+.booking-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.voucher-section {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.voucher-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.voucher-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voucher-item.selected {
+    background-color: #f0f0f0;
+}
+
+.voucher-code {
+    font-weight: bold;
+}
+
+.voucher-discount {
+    color: green;
+}
+
+.voucher-conditions {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.total-amount {
+    font-size: 1.5em;
+    color: #d9534f; /* Màu đỏ cho tổng số tiền */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.booking-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #5cb85c; /* Màu xanh lá cây */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.booking-button:hover {
+    background-color: #4cae4c; /* Màu xanh đậm hơn khi hover */
+}
+
+.payment-button {
+    background-color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 550px;
+}

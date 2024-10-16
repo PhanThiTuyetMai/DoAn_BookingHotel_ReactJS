@@ -1,0 +1,185 @@
+.comment-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment-container {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh theo đầu trên cùng */
+    margin-bottom: 15px; /* Khoảng cách giữa các bình luận */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; /* Đặt chiều dọc để tên người dùng nằm dưới avatar */
+    align-items: center; /* Căn giữa nội dung */
+    margin-right: 15px; /* Khoảng cách giữa user info và textarea */
+}
+
+.avatar {
+    width: 40px; /* Chiều rộng của avatar */
+    height: 40px; /* Chiều cao của avatar */
+    border-radius: 50%; /* Để avatar có hình tròn */
+    margin-bottom: 5px; /* Khoảng cách giữa avatar và username */
+}
+
+textarea {
+    flex: 1; /* Để textarea chiếm toàn bộ không gian còn lại */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    resize: none;
+    font-size: 16px;
+}
+
+.comment-section {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.comment-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    flex: 1;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: #F2CED5;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.loading {
+    text-align: center;
+    font-style: italic;
+}
+
+.comment-item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-content > div {
+    display: flex;
+    align-items: center; 
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #777;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap; /* Để cho phép xuống dòng nếu không đủ chỗ */
+    margin-bottom: 15px;
+}
+
+.ratings label {
+    margin-right: 10px; /* Khoảng cách giữa nhãn và input */
+    font-weight: bold;
+}
+
+.ratings input {
+    width: 50px; /* Chiều rộng của input */
+    padding: 5px;
+    margin-right: 20px; /* Khoảng cách giữa các input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ratings > label {
+    margin-right: 10px; /* Khoảng cách giữa nhãn và input */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.hexagon {
+    width: 40px; 
+    height: 23px; 
+    background-color: #007bff;
+    position: relative;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hexagon:before, .hexagon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+}
+
+.hexagon:before {
+    bottom: 100%; 
+    border-bottom: 15px solid #007bff; 
+}
+
+.hexagon:after {
+    top: 100%; 
+    border-top: 15px solid #007bff; 
+}

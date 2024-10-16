@@ -1,0 +1,153 @@
+.card {
+    display: flex; /* Sử dụng flexbox để xếp thông tin bên phải hình */
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    overflow: hidden; /* Ẩn nội dung ra ngoài */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    transition: transform 0.2s; /* Hiệu ứng hover */
+}
+
+
+.card:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.card-body {
+    background-color: #f8f9fa; /* Màu nền cho nội dung */
+    padding: 16px;
+    text-align: left; /* Căn trái nội dung */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Kích thước chữ */
+    color: #343a40; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+    margin-bottom: 0.5rem; /* Khoảng cách dưới chữ */
+}
+
+.card-text {
+    color: #6c757d; /* Màu chữ phụ */
+    margin-bottom: 0.5rem; /* Khoảng cách dưới */
+    font-size: 25px;
+}
+
+.image-container2 {
+    position: relative;
+    height: 200px; /* Đặt chiều cao cố định */
+    overflow: hidden;
+    flex-shrink: 0; /* Ngăn không cho hình ảnh co lại */
+    width: 30%; /* Chiều rộng hình ảnh */
+}
+
+.main-image2, .slider-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hoặc contain nếu bạn muốn */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image2 {
+    opacity: 0; /* Bắt đầu với opacity = 0 */
+}
+
+.slider-image2.active {
+    opacity: 1; /* Khi hình ảnh hiện tại, đổi thành opacity = 1 */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Trong suốt */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    opacity: 0.7; /* Trong suốt */
+    transition: opacity 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.arrow:hover {
+    opacity: 1; /* Hiển thị rõ khi hover */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.popular-rating-box {
+    background-color: white; /* Màu nền trắng */
+    border: 1px solid #ccc; /* Viền nhẹ */
+    border-radius: 5px; /* Bo góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    padding: 15px; /* Thêm khoảng cách bên trong */
+    margin-bottom: 20px; /* Khoảng cách dưới khung độ phổ biến */
+}
+
+.star-rating {
+    display: flex; /* Sắp xếp ngôi sao thành hàng */
+    margin-bottom: 10px; /* Khoảng cách dưới ngôi sao */
+}
+
+.star {
+    font-size: 1.8rem; /* Kích thước ngôi sao */
+    color: #d3d3d3; /* Màu ngôi sao không được lấp đầy */
+    margin-right: 5px; /* Khoảng cách giữa các ngôi sao */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.star.filled {
+    color: #ffcc00; /* Màu ngôi sao đã được lấp đầy */
+}
+
+input[type="checkbox"] {
+    display: none; /* Ẩn checkbox gốc */
+}
+
+label {
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.checkbox-square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc; /* Viền xung quanh checkbox */
+    display: inline-block; /* Để hiển thị như một ô vuông */
+    margin-right: 8px; /* Khoảng cách bên phải */
+    position: relative; /* Để căn chỉnh */
+}
+
+input[type="checkbox"]:checked + .checkbox-square {
+    background-color: #007bff; /* Màu nền khi checkbox được chọn */
+    border-color: #007bff; /* Màu viền khi chọn */
+}
+
+label:hover .star {
+    color: #ffcc00; /* Màu ngôi sao khi hover */
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+.additional-value {
+    font-size: 1.2rem; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    margin-top: 10px; /* Khoảng cách trên */
+    color: #007bff; /* Màu sắc nếu muốn */
+}
